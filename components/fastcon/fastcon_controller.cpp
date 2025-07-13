@@ -23,7 +23,7 @@ namespace esphome
             Command cmd;
             cmd.data = data;
             cmd.timestamp = millis();
-            cmd.retries = 2;
+            cmd.retries = 3;
 
             queue_.push(cmd);
             ESP_LOGV(TAG, "Command queued, queue size: %d", queue_.size());
